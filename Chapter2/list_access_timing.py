@@ -82,5 +82,11 @@ def main():
     f.close()
 
 
+def plot():
+    import plotdata
+    plotdata.main('ListAccessTiming.xml')
+
+
 if __name__ == '__main__':
     main()
+    plot()
