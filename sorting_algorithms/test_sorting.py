@@ -32,6 +32,11 @@ class MyTestCase(unittest.TestCase):
             sort(lst, 0, len(lst)-1)
             self.assertEqual(lst, sorted(lst))
 
+    def test_tree_sort(self):
+        from sorting_algorithms.tree_sort import sort
+        for lst in map(eval, lists_to_test):
+            self.assertEqual(sort(lst), sorted(lst))
+
 
 if __name__ == '__main__':
     unittest.main()
