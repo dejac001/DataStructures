@@ -22,8 +22,8 @@ def merge(l1: list, i, istop, jstop):
 def sort(my_list: list, i_start: int, i_end: int):
     """Merge sort in-place"""
     if i_start >= i_end - 1:
-        # if i_start == i_end - 1, length of list is 1 (first list has len 1 and other list has len 0)
-        #   need > b/c when call w/ i_mid+1 below, dont check if larger than i_end
+        # if i == j - 1, length of list is 1 (first list has len 1 and other list has len 0)
+        #   need > b/c when call w/ i_mid+1 below, dont check if larger than j
         # thus, below, we will only be sorting two lists, each of length 1
         return
 

@@ -9,7 +9,7 @@ def sort(my_list: list):
         my_list[i], my_list[i_min] = my_list[i_min], my_list[i]
 
 
-from from_scratch import lists_to_test
+from sorting_algorithms import lists_to_test
 
 
 def time():
